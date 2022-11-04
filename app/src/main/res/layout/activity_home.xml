@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_holder"
+    android:background="@color/background"
+    tools:context=".HomeActivity">
+
+    <View
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/action_bar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_header">
+
+        <ImageView
+            android:id="@+id/toolbar_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/circle_background"
+            android:src="@drawable/icon_question_bank" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toEndOf="@+id/toolbar_icon"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Title"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_option"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="TODO"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_menu" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <GridLayout
+                    android:id="@+id/cv_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_study_type"
+                    android:layout_margin="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:background="@drawable/background_grid"
+                    android:columnCount="3"
+                    android:elevation="3dp"
+                    android:rowCount="3">
+
+                    <RelativeLayout
+                        android:id="@+id/exam_by_topic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item10"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_chapter" />
+
+                        <TextView
+                            android:id="@+id/tv_item10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item10"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="By Topic"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item11"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_subject" />
+
+                        <TextView
+                            android:id="@+id/tv_item11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item11"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="By Subject"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item12"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_books" />
+
+                        <TextView
+                            android:id="@+id/tv_item12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item12"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Full Model Test"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item21"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_special_model_test" />
+
+                        <TextView
+                            android:id="@+id/tv_item21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item21"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Special Model Test"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item22"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_quiz" />
+
+                        <TextView
+                            android:id="@+id/tv_item22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item22"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Quiz"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_item23"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/icon_question_bank" />
+
+                        <TextView
+                            android:id="@+id/tv_item23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_item23"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Question Bank"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_services"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnSpan="3"
+                        android:background="@drawable/background_header"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Exam Types"
+                        android:textSize="20sp"
+                        android:elevation="2dp"/>
+
+
+
+                </GridLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_study_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:backgroundTint="@color/background_two"
+                            android:elevation="3dp"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_study_materials" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Study Materials" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/model_test"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:backgroundTint="@color/background_two"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_model_test" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Model Tests" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:backgroundTint="@color/background_two"
+                            android:padding="10dp"
+                            android:src="@drawable/icon_courses" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Courses" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <RelativeLayout
+                    android:layout_below="@+id/cv_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="3dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_grid">
+
+                    <GridView
+                        android:id="@+id/gv_offers"
+                        android:layout_below="@id/tv_dynamic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="vertical"
+                        android:isScrollContainer="false"
+                        android:numColumns="3" />
+
+                    <TextView
+                        android:id="@+id/tv_dynamic"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Others"
+                        android:textSize="16sp"
+                        android:elevation="2dp"
+                        android:background="@drawable/background_header"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

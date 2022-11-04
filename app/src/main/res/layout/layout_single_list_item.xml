@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_grid"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:elevation="3dp"
+    android:id="@+id/data_holder">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model Test One"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingStart="0dp"
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                />
+
+            <view class="androidx.cardview.widget.CardView"
+                style="@style/Divider.Vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/text_color_two"
+                />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 Question"
+                />
+
+            <view class="androidx.cardview.widget.CardView"
+                style="@style/Divider.Vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/text_color_two"
+                />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 Minutes"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_common"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_grid"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/attempted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_launcher_background"
+        android:textSize="11sp"
+        android:text="Unattempted"
+        />
+
+
+        
+
+</RelativeLayout>

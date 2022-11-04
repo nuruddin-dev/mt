@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_holder"
+    android:background="@color/background"
+    tools:context=".fragment.ModelTestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/toolbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@color/action_bar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_header">
+
+            <ImageView
+                android:id="@+id/toolbar_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/icon_model_test" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toEndOf="@+id/toolbar_icon"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="Test Category"
+                android:textColor="@color/text_color_two"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_grid_change"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:padding="10dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Grid Change"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/icon_grid_vertical" />
+
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_offers"
+            android:layout_below="@id/toolbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="vertical"
+            android:isScrollContainer="false"
+            android:numColumns="3"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
